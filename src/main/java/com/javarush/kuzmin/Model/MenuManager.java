@@ -99,7 +99,7 @@ public class MenuManager {
         } while(!Validator.isFileExists(this._filePath));
         System.out.println("✅ File found: " + this._filePath + "\n");
 
-        String[] possibleWords = {"вас", "видимо", "отменили"};
+        String[] possibleWords;
         do {
             System.out.println("Enter the search words to look for in the text, separated by , (commas)");
             System.out.println("Example: или,да,нет");
