@@ -1,10 +1,13 @@
 package com.javarush.kuzmin.Model;
 
+import java.io.File;
+
 public class Validator {
-    public boolean isValidKey(int key, char[] alphabet) {
-        return true;
+    public static boolean isValidKey(int key, char[] alphabet) {
+        return alphabet.length > key;
     }
-    public boolean isFileExists(String filePath) {
-        return true;
+    public static boolean isFileExists(String filePath) {
+        File file = new File(filePath);
+        return file.exists();
     }
 }
